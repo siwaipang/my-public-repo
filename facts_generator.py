@@ -12,7 +12,7 @@ def class_contributions():
         ("Ruud", "Ik ben getrouwd, maar woon niet samen."),
         
         # 👇 Students, add your entries here:
-        # ...
+        ("Si Wai", "hello world."),
 
     ]
 
