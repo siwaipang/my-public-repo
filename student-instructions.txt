@@ -1,0 +1,101 @@
+#-----------------------------------------------------------------------------
+
+1. Fork the repo on GitHub:
+
+>> Done via the GitHub UI (click Fork)
+
+#-----------------------------------------------------------------------------
+
+2. Clone your fork locally:
+
+>> git clone https://github.com/<student-repo>/my-public-repo.git
+
+>> cd my-public-repo
+
+#-----------------------------------------------------------------------------
+
+3. Create a new branch (good practice):
+
+>> git checkout -b my-contribution-branch
+
+#-----------------------------------------------------------------------------
+
+4. Edit the Python file:
+
+>> Open facts_generator.py and add your entry
+
+#-----------------------------------------------------------------------------
+
+5. Stage & commit the change:
+
+>> git add facts_generator.py
+
+>> git commit -m "[This commit] Adds my contribution: <student name>"
+
+#-----------------------------------------------------------------------------
+
+6. Push to your fork:
+
+>> git push origin my-contribution-branch
+
+#-----------------------------------------------------------------------------
+
+7. Open a Pull Request:
+
+>> Go to your fork on GitHub
+
+>> GitHub will suggest creating a Pull Request (PR) to the original repo
+
+#-----------------------------------------------------------------------------
+
+8. Resolve conflicts
+
+>> If GitHub shows a conflict:
+
+    >> git remote add upstream https://github.com/hoofr/my-public-repo.git (only once)
+
+    >> git checkout main
+
+    >> git pull upstream main
+
+    >> git checkout my-contribution
+
+    >> git merge main
+
+>> Resolve conflicts manually in facts_generator.py
+
+>> Then:
+
+    >> git add workshop_conflict.py
+
+    >> git commit
+
+    >> git push origin my-contribution
+
+>> The PR updates automatically
+
+#-----------------------------------------------------------------------------
+
+9. Sync with forked repo:
+
+>> Make sure the upstream remote is set:
+
+    >> git remote add upstream https://github.com/hoofr/my-public-repo.git
+
+>> Check if Remote is set:
+
+    >> git remote -v
+
+>> Fetch the latest changes from upstream:
+
+    >> git fetch upstream main
+
+>> Update your local main branch:
+
+    >> git pull upstream main
+
+>> Push the updated main back to your fork:
+
+    >> git push origin main
+
+#-----------------------------------------------------------------------------
